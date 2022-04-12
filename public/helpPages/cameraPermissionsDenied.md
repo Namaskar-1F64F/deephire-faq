@@ -8,4 +8,4 @@ If you are on your computer, or on Android, we suggest doing the interview on ei
 
 ![Enable Camera Permissions (Android)](https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_9yuwqb.png)
 
-If none of this helps you, please send a message to our support (icon on bottom right) and we will help you out."
+If none of this helps you, please send a message to our support (icon on bottom right) and we will help you out.

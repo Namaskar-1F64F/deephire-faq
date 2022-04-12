@@ -1,6 +1,6 @@
 export const data = [
   {
-    id: 11,
+    id: 12,
     title: "Russell Test",
     link: "/test",
     summary: "This is an example",
@@ -32,7 +32,7 @@ export const data = [
   {
     id: 4,
     title: "Camera Permissions Denied",
-    link: "antd-demo/public/helpPages/cameraPermissionsDenied.md",
+    link: "/cameraPermission",
     summary: "Managing camera permissions.",
   },
   {

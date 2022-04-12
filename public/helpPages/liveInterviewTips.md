@@ -1,4 +1,4 @@
-### Below are the 6 most helpful tips for the DeepHire Live Interviews
+## Below are the 6 most helpful tips for the DeepHire Live Interviews
 
 - Create a test interview before you have any live interviews with candidates. Make sure everything is working correctly for you. [How to fix video issues](https://help.deephire.com/en/article/fixing-video-issues-8k7exw/)
 - There is a maximum of 4 participants allowed in an interview room at one time.

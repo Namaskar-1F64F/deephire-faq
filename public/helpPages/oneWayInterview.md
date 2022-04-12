@@ -1,4 +1,4 @@
-# What is a one-way video interview?
+## What is a one-way video interview?
 
 Your recruiter wants to move you to the next step of the recruiting process, and has a few interview questions that they requested you respond to.
 
