@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import Test from "./routes/test"
 
 ReactDOM.render(
   <React.StrictMode>
@@ -10,11 +11,15 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route
+          path="/test"
+          element={
+            <Test />
+          }
+        />
+        <Route
           path="*"
           element={
-            <main style={{ padding: "1rem" }}>
-              <p>Oops! Nothing to see here.</p>
-            </main>
+            <>fallback page</>
           }
         />
       </Routes>
