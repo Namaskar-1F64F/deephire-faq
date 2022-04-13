@@ -4,15 +4,26 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Test from "./routes/test";
+import CameraPermission from "./routes/cameraPermission";
+import { Layout, PageHeader } from "antd";
+
+const { Footer, Content } = Layout;
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/test" element={<Test />} />
-        <Route path="*" element={<>fallback page</>} />
-      </Routes>
+      <Layout>
+        <PageHeader />
+        <Content>
+          <Routes>
+            <Route path="/" element={<App />} />
+            <Route path="/test" element={<Test />} />
+            <Route path="/cameraPermission" element={<CameraPermission />} />
+            <Route path="*" element={<>fallback page</>} />
+          </Routes>
+        </Content>
+        <Footer>Footer</Footer>
+      </Layout>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
