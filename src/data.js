@@ -1,20 +1,14 @@
 export const data = [
   {
-    id: 12,
-    title: "Russell Test",
-    link: "/test",
-    summary: "This is an example",
-  },
-  {
     id: 0,
     title: "Video Interview Cheat Sheet",
-    link: "/antd-demo/public/helpPages/image_cy119m.png",
+    link: "/videoInterviewCheatSheet",
     summary: "Last minute interview tips.",
   },
   {
     id: 1,
     title: "How to get Network Test Results",
-    link: "/antd-demo/public/helpPages/debugDiagnose.md",
+    link: "/networkTestResults",
     summary: "These steps will help us debug and diagnose your issue!",
   },
   {
@@ -76,5 +70,18 @@ export const data = [
     title: "Deephire & Clockwork Integration",
     link: "antd-demo/public/helpPages/clockworkIntegration.md",
     summary: "How to integrate Deephire and Clockwork platforms.",
+  },
+  {
+    id: 12,
+    title: "Common Mistakes & Best Practices",
+    link: "/commonMistakesBestPractice",
+    summary:
+      "An overview of common mistakes and best practices for optimizing your video interviews.",
+  },
+  {
+    id: 13,
+    title: "Am I able to retake my video responses?",
+    link: "/retakes",
+    summary: "Guidance on retaking video responses.",
   },
 ];

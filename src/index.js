@@ -3,8 +3,11 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Test from "./routes/test";
 import CameraPermission from "./routes/cameraPermission";
+import CheatSheet from "./routes/videoInterviewCheatSheet";
+import NetworkTestResults from "./routes/networkTestResults";
+import MistakesBestPractice from "./routes/commonMistakesBestPractice";
+import Retakes from "./routes/retakes";
 import { Layout, PageHeader } from "antd";
 
 const { Footer, Content } = Layout;
@@ -17,8 +20,17 @@ ReactDOM.render(
         <Content>
           <Routes>
             <Route path="/" element={<App />} />
-            <Route path="/test" element={<Test />} />
+            <Route
+              path="/commonMistakesBestPractice"
+              element={<MistakesBestPractice />}
+            />
+            <Route path="/videoInterviewCheatSheet" element={<CheatSheet />} />
             <Route path="/cameraPermission" element={<CameraPermission />} />
+            <Route
+              path="/networkTestResults"
+              element={<NetworkTestResults />}
+            />
+            <Route path="/retakes" element={<Retakes />} />
             <Route path="*" element={<>fallback page</>} />
           </Routes>
         </Content>
@@ -29,7 +41,4 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
