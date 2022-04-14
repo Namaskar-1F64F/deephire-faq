@@ -3,11 +3,13 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import CameraPermission from "./routes/cameraPermission";
 import CheatSheet from "./routes/videoInterviewCheatSheet";
 import NetworkTestResults from "./routes/networkTestResults";
-import MistakesBestPractice from "./routes/commonMistakesBestPractice";
-import Retakes from "./routes/retakes";
+import FrequentlyAskedQuestions from "./routes/frequentlyAskedQuestions";
+import Debugging from "./routes/videoInterviewErrors";
+import SupportedBrowsers from "./routes/supportedBrowsers";
+import PracticeInterview from "./routes/instructionsOneWayInterview";
+import SampleQuestions from "./routes/sampleQuestions";
 import { Layout, PageHeader } from "antd";
 
 const { Footer, Content } = Layout;
@@ -21,16 +23,21 @@ ReactDOM.render(
           <Routes>
             <Route path="/" element={<App />} />
             <Route
-              path="/commonMistakesBestPractice"
-              element={<MistakesBestPractice />}
+              path="/frequentlyAskedQuestions"
+              element={<FrequentlyAskedQuestions />}
             />
             <Route path="/videoInterviewCheatSheet" element={<CheatSheet />} />
-            <Route path="/cameraPermission" element={<CameraPermission />} />
             <Route
               path="/networkTestResults"
               element={<NetworkTestResults />}
             />
-            <Route path="/retakes" element={<Retakes />} />
+            <Route path="/videoInterviewErrors" element={<Debugging />} />
+            <Route path="/supportedBrowsers" element={<SupportedBrowsers />} />
+            <Route
+              path="/instructionsOneWayInterview"
+              element={<PracticeInterview />}
+            />
+            <Route path="/sampleQuestions" element={<SampleQuestions />} />
             <Route path="*" element={<>fallback page</>} />
           </Routes>
         </Content>

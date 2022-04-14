@@ -13,7 +13,7 @@ const style = {
 const App = () => (
   <>
     <Divider orientation="center">
-      <Title>Frequently Asked Questions</Title>
+      <Title>Help Desk</Title>
     </Divider>
     <List
       bordered
