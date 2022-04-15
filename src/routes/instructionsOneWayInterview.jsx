@@ -1,6 +1,7 @@
 import { Row, Col, Typography } from 'antd';
 import ReactMarkdown from 'react-markdown';
 import ImageFunction from './imageFunction';
+import { SiderDemo } from '../sider';
 
 const markdown = 
 `# Congratulations on being selected for a One Way Interview!
@@ -81,7 +82,8 @@ export default function PracticeInterview() {
     return (
         <div>
             <Row>
-                <Col span={4}></Col>
+                <Col span={4}>
+                </Col>
                 <Col span={16}>
                     <Title style={{justifyContent: 'center'}}>One Way Interview Instructions</Title>
                 </Col>
@@ -89,7 +91,9 @@ export default function PracticeInterview() {
             </Row>
             <br></br>
             <Row>
-                <Col span={4}></Col>
+                <Col span={4}>
+                    <SiderDemo />
+                </Col>
                 <Col span={16}>
                     <ReactMarkdown 
                     children={markdown}>

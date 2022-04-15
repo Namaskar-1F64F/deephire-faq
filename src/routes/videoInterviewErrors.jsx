@@ -1,6 +1,7 @@
 import { Row, Col, Typography } from 'antd';
 import ReactMarkdown from 'react-markdown';
 import ImageFunction from './imageFunction';
+import { SiderDemo } from '../sider';
 
 const markdown = 
 `## Debugging steps if you have an issue with your interview:
@@ -70,7 +71,8 @@ export default function VideoInterviewErrors() {
     return (
         <div>
             <Row>
-                <Col span={4}></Col>
+                <Col span={4}>
+                </Col>
                 <Col span={16}>
                     <Title style={{justifyContent: 'center'}}>Video Interview Errors</Title>
                 </Col>
@@ -78,7 +80,9 @@ export default function VideoInterviewErrors() {
             </Row>
             <br></br>
             <Row>
-                <Col span={4}></Col>
+                <Col span={4}>
+                    <SiderDemo />
+                </Col>
                 <Col span={16}>
                     <ReactMarkdown 
                     children={markdown}>

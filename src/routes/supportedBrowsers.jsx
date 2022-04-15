@@ -1,6 +1,7 @@
 import { Row, Col, Typography } from 'antd';
 import ReactMarkdown from 'react-markdown';
 import ImageFunction from './imageFunction';
+import { SiderDemo } from '../sider';
 
 const markdown = 
 `# Browser Support
@@ -16,7 +17,8 @@ export default function SupportedBrowsers() {
     return (
         <div>
             <Row>
-                <Col span={4}></Col>
+                <Col span={4}>
+                </Col>
                 <Col span={16}>
                     <Title style={{justifyContent: 'center'}}>Supported Browsers</Title>
                 </Col>
@@ -24,7 +26,9 @@ export default function SupportedBrowsers() {
             </Row>
             <br></br>
             <Row>
-                <Col span={4}></Col>
+                <Col span={4}>
+                <SiderDemo />
+                </Col>
                 <Col span={16}>
                     <ReactMarkdown 
                     children={markdown}>

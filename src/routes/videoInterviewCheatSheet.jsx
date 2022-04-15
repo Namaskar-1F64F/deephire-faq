@@ -1,6 +1,7 @@
 import { Row, Col, Typography } from 'antd';
 import ReactMarkdown from 'react-markdown';
 import ImageFunction from './imageFunction.jsx';
+import { SiderDemo } from '../sider.jsx';
 
 const markdown = 
 `## Last minute interview tips.`
@@ -11,7 +12,8 @@ export default function CheatSheet() {
     return (
         <div>
             <Row>
-                <Col span={4}></Col>
+                <Col span={4}>
+                </Col>
                 <Col span={16}>
                     <Title style={{justifyContent: 'center'}}>Interview Cheat Sheet</Title>
                 </Col>
@@ -19,7 +21,9 @@ export default function CheatSheet() {
             </Row>
             <br></br>
             <Row>
-                <Col span={4}></Col>
+                <Col span={4}>                    
+                    <SiderDemo />
+                </Col>
                 <Col span={16}>
                     <ReactMarkdown 
                     children={markdown}>

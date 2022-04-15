@@ -1,5 +1,6 @@
 import { Row, Col, Typography } from 'antd';
 import ReactMarkdown from 'react-markdown';
+import { SiderDemo } from '../sider';
 
 const markdown = 
 `## What are common mistakes candidates make?
@@ -126,7 +127,8 @@ export default function FrequentlyAskedQuestions() {
     return (
         <div>
             <Row>
-                <Col span={4}></Col>
+                <Col span={4}>
+                </Col>
                 <Col span={16}>
                     <Title style={{justifyContent: 'center'}}>Frequently Asked Questions</Title>
                 </Col>
@@ -134,7 +136,9 @@ export default function FrequentlyAskedQuestions() {
             </Row>
             <br></br>
             <Row>
-                <Col span={4}></Col>
+                <Col span={4}>
+                    <SiderDemo />
+                </Col>
                 <Col span={16}>
                     <ReactMarkdown 
                     children={markdown}>

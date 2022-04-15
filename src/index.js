@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Layout, PageHeader } from "antd";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import CheatSheet from "./routes/videoInterviewCheatSheet";
@@ -10,7 +11,6 @@ import Debugging from "./routes/videoInterviewErrors";
 import SupportedBrowsers from "./routes/supportedBrowsers";
 import PracticeInterview from "./routes/instructionsOneWayInterview";
 import SampleQuestions from "./routes/sampleQuestions";
-import { Layout, PageHeader } from "antd";
 
 const { Footer, Content } = Layout;
 
@@ -18,7 +18,11 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Layout>
-        <PageHeader />
+        <PageHeader
+          className="site-page-header"
+          title="Deephire Help Desk"
+          avatar={{ src: "/deephire-favicon.png" }}
+        />
         <Content>
           <Routes>
             <Route path="/" element={<App />} />

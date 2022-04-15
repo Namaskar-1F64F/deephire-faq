@@ -1,6 +1,7 @@
 import { Row, Col, Typography } from 'antd';
 import ReactMarkdown from 'react-markdown';
 import ImageFunction from './imageFunction';
+import { SiderDemo } from '../sider';
 
 const markdown = 
 `# The following steps will help us debug and diagnose your issue!
@@ -31,7 +32,8 @@ export default function NetworkTestResults() {
     return (
         <div>
             <Row>
-                <Col span={4}></Col>
+                <Col span={4}>
+                </Col>
                 <Col span={16}>
                     <Title style={{justifyContent: 'center'}}>Network Testing</Title>
                 </Col>
@@ -39,7 +41,9 @@ export default function NetworkTestResults() {
             </Row>
             <br></br>
             <Row>
-                <Col span={4}></Col>
+                <Col span={4}>
+                    <SiderDemo />
+                </Col>
                 <Col span={16}>
                     <ReactMarkdown 
                     children={markdown}>
