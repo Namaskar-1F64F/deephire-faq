@@ -26,35 +26,39 @@ export default function SupportedBrowsers() {
             </Row>
             <br></br>
             <Row>
-                <Col span={4}>
-                <SiderDemo />
-                </Col>
-                <Col span={16}>
-                    <ReactMarkdown 
-                    children={markdown}>
-                    </ReactMarkdown>
-                </Col>
-                <Col span={4}></Col>
-            </Row>
-            <br></br>
-            <Row>
-                <Col span={4}></Col>
-                <Col span={16}>
-                    <ImageFunction 
-                    src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1kg9bhn.png'}
-                    alt= {'Supported browsers for IOS and Android'}/>
-                </Col>
-                <Col span={4}></Col>
-            </Row>
-            <br></br>
-            <Row>
-                <Col span={4}></Col>
-                <Col span={16}>
-                    <br></br>
-                    <ReactMarkdown
-                    children={markdownFinal}>
-                    </ReactMarkdown>
-                </Col>
+                
+                    <Col span={4}>
+                        <SiderDemo />
+                    </Col>
+                    <Col span={16}>
+                        <Row>
+                            <Col span={16}>
+                                <ReactMarkdown 
+                                children={markdown}>
+                                </ReactMarkdown>
+                            </Col>
+                            <Col span={4}></Col>
+                        </Row>
+                        <br></br>
+                        <Row>
+                            <Col span={16}>
+                                <ImageFunction 
+                                src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1kg9bhn.png'}
+                                alt= {'Supported browsers for IOS and Android'}/>
+                            </Col>
+                            <Col span={4}></Col>
+                        </Row>
+                        <br></br>
+                        <Row>
+                            <Col span={16}>
+                                <br></br>
+                                <ReactMarkdown
+                                children={markdownFinal}>
+                                </ReactMarkdown>
+                            </Col>
+                            <Col span={4}></Col>
+                        </Row>
+                    </Col>
                 <Col span={4}></Col>
             </Row>
         </div>

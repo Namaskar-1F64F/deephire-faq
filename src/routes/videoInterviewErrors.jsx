@@ -1,7 +1,7 @@
 import { Row, Col, Typography } from 'antd';
 import ReactMarkdown from 'react-markdown';
-import ImageFunction from './imageFunction';
 import { SiderDemo } from '../sider';
+import ImageFunction from './imageFunction';
 
 const markdown = 
 `## Debugging steps if you have an issue with your interview:
@@ -42,6 +42,8 @@ Sometimes VPN's stop DeepHire from working correctly. Disconnect from your VPN t
 Double check that your webcam and microphone are plugged in, and test them in another applications to make sure they are working correctly. 
 
 If none of these solutions work for you, please send us a message using the chatbox on the bottom right. 
+
+_________________________________________________________________
 
 ## The error ***Camera Permissions Denied*** usually occurs when your browser permissions do not allow access to the camera.
 
@@ -84,91 +86,80 @@ export default function VideoInterviewErrors() {
                     <SiderDemo />
                 </Col>
                 <Col span={16}>
-                    <ReactMarkdown 
-                    children={markdown}>
-                    </ReactMarkdown>
-                </Col>
-                <Col span={4}></Col>
-            </Row>
-            <br></br>
-            <Row>
-                <Col span={4}></Col>
-                <Col span={16}>
-                    <ImageFunction
-                    src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1yvwohq.png'}
-                    alt= {'Enable Camera Permissions Chrome (Laptop or Desktop)'}/>
-                </Col>
-                <Col span={4}></Col>
-            </Row>
-            <br></br>
-            <Row>
-                <Col span={4}></Col>
-                <Col span={16}>
-                    <ReactMarkdown
-                    children={markdownAndroidImage}>
-                    </ReactMarkdown>
-                </Col>
-            </Row>
-            <br></br>
-            <Row>
-                <Col span={4}></Col>
-                <Col span={16}>
-                    <ImageFunction 
-                    src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_9yuwqb.png'}
-                    alt= {'Enable Camera Permissions (Android)'}/>
-                </Col>
-                <Col span={4}></Col>
-            </Row>
-            <br></br>
-            <Row>
-                <Col span={4}></Col>
-                <Col span={16}>
+                    <Row>
+                        <Col span={16}>
+                            <ReactMarkdown 
+                            children={markdown}>
+                            </ReactMarkdown>
+                        </Col>
+                    </Row>
                     <br></br>
-                    <ReactMarkdown
-                    children={markdownFinal}>
-                    </ReactMarkdown>
-                </Col>
-                <Col span={4}></Col>
-            </Row>
-            <br></br>
-            <Row>
-                <Col span={4}></Col>
-                <Col span={16}>
-                    <ImageFunction 
-                    src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_t1xko5.png'}
-                    alt= {'Make sure Chrome is ON'}/>
-                </Col>
-                <Col span={4}></Col>
-            </Row>
-            <br></br>
-            <Row>
-                <Col span={4}></Col>
-                <Col span={16}>
+                    <Row>
+                        <Col span={16}>
+                            <ImageFunction
+                            src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1yvwohq.png'}
+                            alt= {'Enable Camera Permissions Chrome (Laptop or Desktop)'}/>
+                        </Col>
+                    </Row>
                     <br></br>
-                    <ReactMarkdown
-                    children={markdownFinalFinal}>
-                    </ReactMarkdown>
-                </Col>
-                <Col span={4}></Col>
-            </Row>
-            <br></br>
-            <Row>
-                <Col span={4}></Col>
-                <Col span={16}>
-                    <ImageFunction 
-                    src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_w2wzfh.png'}
-                    alt= {'Make sure Google Chrome has camera access'}/>
-                </Col>
-                <Col span={4}></Col>
-            </Row>
-            <br></br>
-            <Row>
-                <Col span={4}></Col>
-                <Col span={16}>
+                    <Row>
+                        <Col span={16}>
+                            <ReactMarkdown
+                            children={markdownAndroidImage}>
+                            </ReactMarkdown>
+                        </Col>
+                    </Row>
                     <br></br>
-                    <ReactMarkdown
-                    children={markdownFinalFinalFinal}>
-                    </ReactMarkdown>
+                    <Row>
+                        <Col span={16}>
+                            <ImageFunction 
+                            src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_9yuwqb.png'}
+                            alt= {'Enable Camera Permissions (Android)'}/>
+                        </Col>
+                    </Row>
+                    <br></br>
+                    <Row>
+                        <Col span={16}>
+                            <br></br>
+                            <ReactMarkdown
+                            children={markdownFinal}>
+                            </ReactMarkdown>
+                        </Col>
+                    </Row>
+                    <br></br>
+                    <Row>
+                        <Col span={16}>
+                            <ImageFunction 
+                            src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_t1xko5.png'}
+                            alt= {'Make sure Chrome is ON'}/>
+                        </Col>
+                    </Row>
+                    <br></br>
+                    <Row>
+                        <Col span={16}>
+                            <br></br>
+                            <ReactMarkdown
+                            children={markdownFinalFinal}>
+                            </ReactMarkdown>
+                        </Col>
+                    </Row>
+                    <br></br>
+                    <Row>
+                        <Col span={16}>
+                            <ImageFunction 
+                            src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_w2wzfh.png'}
+                            alt= {'Make sure Google Chrome has camera access'}/>
+                        </Col>
+                    </Row>
+                    <br></br>
+                    <Row>
+                        <Col span={16}>
+                            <br></br>
+                            <ReactMarkdown
+                            children={markdownFinalFinalFinal}>
+                            </ReactMarkdown>
+                        </Col>
+                    </Row>
                 </Col>
                 <Col span={4}></Col>
             </Row>

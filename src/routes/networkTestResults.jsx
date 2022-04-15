@@ -45,29 +45,33 @@ export default function NetworkTestResults() {
                     <SiderDemo />
                 </Col>
                 <Col span={16}>
-                    <ReactMarkdown 
-                    children={markdown}>
-                    </ReactMarkdown>
-                </Col>
-                <Col span={4}></Col>
-            </Row>
-            <br></br>
-            <Row>
-                <Col span={4}></Col>
-                <Col span={16}>
-                    <ImageFunction
-                    src={'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_grtv9g.png'}
-                    alt={'Send your results in the chatbox'} />
-                </Col>
-            </Row>
-            <br></br>
-            <Row>
-                <Col span={4}></Col>
-                <Col span={16}>
-                    <ReactMarkdown
-                    children={markdownFinal}>
-                    </ReactMarkdown>
-                </Col>
+                    <Row>
+                        <Col span={16}>
+                            <ReactMarkdown 
+                            children={markdown}>
+                            </ReactMarkdown>
+                        </Col>
+                        <Col span={4}></Col>
+                    </Row>
+                    <br></br>
+                    <Row>
+                        <Col span={16}>
+                            <ImageFunction
+                            src={'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_grtv9g.png'}
+                            alt={'Send your results in the chatbox'} />
+                        </Col>
+                        <Col span={4}></Col>
+                    </Row>
+                    <br></br>
+                    <Row>
+                        <Col span={16}>
+                            <ReactMarkdown
+                            children={markdownFinal}>
+                            </ReactMarkdown>
+                        </Col>
+                        <Col span={4}></Col>
+                    </Row>
+                    </Col>
                 <Col span={4}></Col>
             </Row>
         </div>

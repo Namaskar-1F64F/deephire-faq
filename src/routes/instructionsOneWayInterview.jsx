@@ -95,58 +95,57 @@ export default function PracticeInterview() {
                     <SiderDemo />
                 </Col>
                 <Col span={16}>
-                    <ReactMarkdown 
-                    children={markdown}>
-                    </ReactMarkdown>
-                </Col>
-                <Col span={4}></Col>
-            </Row>
-            <br></br>
-            <Row>
-                <Col span={4}></Col>
-                <Col span={16}>
-                    <ImageFunction 
-                    src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1ip9ymh.png'}
-                    alt= {'A successful test means you are ready to start your practice interview'}/>
-                </Col>
-                <Col span={4}></Col>
-            </Row>
-            <br></br>
-            <Row>
-                <Col span={4}></Col>
-                <Col span={16}>
-                    <ImageFunction 
-                    src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1hselvw.png'}
-                    alt= {'Your hardware will be tested automatically!'}/>
-                </Col>
-                <Col span={4}></Col>
-            </Row>
-            <Row>
-                <Col span={4}></Col>
-                <Col span={16}>
+                    <Row>
+                        <Col span={16}>
+                            <ReactMarkdown 
+                            children={markdown}>
+                            </ReactMarkdown>
+                        </Col>
+                        <Col span={4}></Col>
+                    </Row>
                     <br></br>
-                    <ReactMarkdown
-                    children={markdownFinal}>
-                    </ReactMarkdown>
-                </Col>
-                <Col span={4}></Col>
-            </Row>
-            <Row>
-                <Col span={4}></Col>
-                <Col span={16}>
-                    <ImageFunction 
-                    src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1xo8ly.png'}
-                    alt= {'Once you click the button, this chat box opens up!'}/>
-                </Col>
-                <Col span={4}></Col>
-            </Row>
-            <Row>
-                <Col span={4}></Col>
-                <Col span={16}>
+                    <Row>
+                        <Col span={16}>
+                            <ImageFunction 
+                            src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1ip9ymh.png'}
+                            alt= {'A successful test means you are ready to start your practice interview'}/>
+                        </Col>
+                        <Col span={4}></Col>
+                    </Row>
                     <br></br>
-                    <ReactMarkdown
-                    children={markdownFinalFinal}>
-                    </ReactMarkdown>
+                    <Row>
+                        <Col span={16}>
+                            <ImageFunction 
+                            src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1hselvw.png'}
+                            alt= {'Your hardware will be tested automatically!'}/>
+                        </Col>
+                        <Col span={4}></Col>
+                    </Row>
+                    <Row>
+                        <Col span={16}>
+                            <br></br>
+                            <ReactMarkdown
+                            children={markdownFinal}>
+                            </ReactMarkdown>
+                        </Col>
+                        <Col span={4}></Col>
+                    </Row>
+                    <Row>
+                        <Col span={16}>
+                            <ImageFunction 
+                            src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1xo8ly.png'}
+                            alt= {'Once you click the button, this chat box opens up!'}/>
+                        </Col>
+                        <Col span={4}></Col>
+                    </Row>
+                    <Row>
+                        <Col span={16}>
+                            <br></br>
+                            <ReactMarkdown
+                            children={markdownFinalFinal}>
+                            </ReactMarkdown>
+                        </Col>
+                    </Row>
                 </Col>
                 <Col span={4}></Col>
             </Row>

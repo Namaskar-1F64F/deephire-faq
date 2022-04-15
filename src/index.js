@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Layout, PageHeader } from "antd";
+import { Layout, PageHeader, Divider } from "antd";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import CheatSheet from "./routes/videoInterviewCheatSheet";
@@ -17,10 +17,11 @@ const { Footer, Content } = Layout;
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+      {/*Changing to 100vh doesn't work */}
       <Layout>
         <PageHeader
           className="site-page-header"
-          title="Deephire Help Desk"
+          title={<a href="/">Deephire Help Desk</a>}
           avatar={{ src: "/deephire-favicon.png" }}
         />
         <Content>
@@ -45,7 +46,13 @@ ReactDOM.render(
             <Route path="*" element={<>fallback page</>} />
           </Routes>
         </Content>
-        <Footer>Footer</Footer>
+        <Footer>
+          <img alt="Deephire Logo" src="/deephire-favicon.png" height="30px" />
+          <a target="_blank" rel="noreferrer" href="https://www.deephire.com">
+            <Divider type="vertical" />
+            Deephire.com
+          </a>
+        </Footer>
       </Layout>
     </BrowserRouter>
   </React.StrictMode>,
