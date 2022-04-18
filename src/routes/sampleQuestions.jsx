@@ -82,24 +82,24 @@ export default function SampleQuestions() {
     return (
         <div>
             <Row>
-                <Col span={4}>
+                <Col xs={0} sm={4}>
                 </Col>
-                <Col span={16}>
+                <Col xs={24} sm={16}>
                     <Title style={{justifyContent: 'center'}}>Sample Questions</Title>
                 </Col>
-                <Col span={4}></Col>
+                <Col xs={0} sm={4}></Col>
             </Row>
             <br></br>
             <Row>
-                <Col span={4}>
+                <Col xs={0} sm={4}>
                     <SiderDemo />
                 </Col>
-                <Col span={16}>
+                <Col xs={24} sm={16}>
                     <ReactMarkdown 
                     children={markdown}>
                     </ReactMarkdown>
                 </Col>
-                <Col span={4}></Col>
+                <Col xs={0} sm={4}></Col>
             </Row>
             <br></br>
         </div>

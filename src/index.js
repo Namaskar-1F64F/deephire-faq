@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout, PageHeader, Divider } from "antd";
+// import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import CheatSheet from "./routes/videoInterviewCheatSheet";
@@ -17,13 +18,20 @@ const { Footer, Content } = Layout;
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      {/*Changing to 100vh doesn't work */}
-      <Layout>
+      <Layout style={{ minHeight: "100vh" }}>
         <PageHeader
           className="site-page-header"
           title={<a href="/">Deephire Help Desk</a>}
           avatar={{ src: "/deephire-favicon.png" }}
-        />
+        >
+          {/* {React.createElement(
+            this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
+            {
+              className: "trigger",
+              onClick: this.toggle,
+            }
+          )} */}
+        </PageHeader>
         <Content>
           <Routes>
             <Route path="/" element={<App />} />
@@ -46,12 +54,19 @@ ReactDOM.render(
             <Route path="*" element={<>fallback page</>} />
           </Routes>
         </Content>
-        <Footer>
-          <img alt="Deephire Logo" src="/deephire-favicon.png" height="30px" />
-          <a target="_blank" rel="noreferrer" href="https://www.deephire.com">
-            <Divider type="vertical" />
-            Deephire.com
-          </a>
+        <br></br>
+        <Footer style={{ bottom: 0, right: 0 }}>
+          <div style={{ width: "100vh" }}>
+            <img
+              alt="Deephire Logo"
+              src="/deephire-favicon.png"
+              height="30px"
+            />
+            <a target="_blank" rel="noreferrer" href="https://www.deephire.com">
+              <Divider type="vertical" />
+              Deephire.com
+            </a>
+          </div>
         </Footer>
       </Layout>
     </BrowserRouter>

@@ -10,9 +10,7 @@ const markdown =
 
 [TAKE NETWORK TEST
 ](https://tokbox.com/developer/tools/precall/results)
-Here is a video outlining the steps:
-
-[https://www.loom.com/share/a87f03992c4f4b30a7266fba9659475d](https://www.loom.com/share/a87f03992c4f4b30a7266fba9659475d)
+Here is a [video](https://www.loom.com/share/a87f03992c4f4b30a7266fba9659475d) outlining the steps.
 
 ## Text Tutorial 
 
@@ -32,47 +30,44 @@ export default function NetworkTestResults() {
     return (
         <div>
             <Row>
-                <Col span={4}>
+                <Col xs={0} sm={4}>
                 </Col>
-                <Col span={16}>
+                <Col xs={24} sm={16}>
                     <Title style={{justifyContent: 'center'}}>Network Testing</Title>
                 </Col>
-                <Col span={4}></Col>
+                <Col xs={0} sm={4}></Col>
             </Row>
             <br></br>
             <Row>
-                <Col span={4}>
+                <Col xs={0} sm={4}>
                     <SiderDemo />
                 </Col>
-                <Col span={16}>
+                <Col xs={24} sm={16}>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <ReactMarkdown 
                             children={markdown}>
                             </ReactMarkdown>
                         </Col>
-                        <Col span={4}></Col>
                     </Row>
                     <br></br>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <ImageFunction
                             src={'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_grtv9g.png'}
                             alt={'Send your results in the chatbox'} />
                         </Col>
-                        <Col span={4}></Col>
                     </Row>
                     <br></br>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <ReactMarkdown
                             children={markdownFinal}>
                             </ReactMarkdown>
                         </Col>
-                        <Col span={4}></Col>
                     </Row>
-                    </Col>
-                <Col span={4}></Col>
+                </Col>
+                <Col xs={0} sm={4}></Col>
             </Row>
         </div>
     );

@@ -73,21 +73,21 @@ export default function VideoInterviewErrors() {
     return (
         <div>
             <Row>
-                <Col span={4}>
+                <Col xs={0} sm={4}>
                 </Col>
-                <Col span={16}>
+                <Col xs={24} sm={16}>
                     <Title style={{justifyContent: 'center'}}>Video Interview Errors</Title>
                 </Col>
-                <Col span={4}></Col>
+                <Col xs={0} sm={4}></Col>
             </Row>
             <br></br>
             <Row>
-                <Col span={4}>
+                <Col xs={0} sm={4}>
                     <SiderDemo />
                 </Col>
-                <Col span={16}>
+                <Col xs={24} sm={16}>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <ReactMarkdown 
                             children={markdown}>
                             </ReactMarkdown>
@@ -95,7 +95,7 @@ export default function VideoInterviewErrors() {
                     </Row>
                     <br></br>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <ImageFunction
                             src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1yvwohq.png'}
                             alt= {'Enable Camera Permissions Chrome (Laptop or Desktop)'}/>
@@ -103,7 +103,7 @@ export default function VideoInterviewErrors() {
                     </Row>
                     <br></br>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <ReactMarkdown
                             children={markdownAndroidImage}>
                             </ReactMarkdown>
@@ -111,7 +111,7 @@ export default function VideoInterviewErrors() {
                     </Row>
                     <br></br>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <ImageFunction 
                             src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_9yuwqb.png'}
                             alt= {'Enable Camera Permissions (Android)'}/>
@@ -119,7 +119,7 @@ export default function VideoInterviewErrors() {
                     </Row>
                     <br></br>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <br></br>
                             <ReactMarkdown
                             children={markdownFinal}>
@@ -128,7 +128,7 @@ export default function VideoInterviewErrors() {
                     </Row>
                     <br></br>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <ImageFunction 
                             src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_t1xko5.png'}
                             alt= {'Make sure Chrome is ON'}/>
@@ -136,7 +136,7 @@ export default function VideoInterviewErrors() {
                     </Row>
                     <br></br>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <br></br>
                             <ReactMarkdown
                             children={markdownFinalFinal}>
@@ -145,7 +145,7 @@ export default function VideoInterviewErrors() {
                     </Row>
                     <br></br>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <ImageFunction 
                             src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_w2wzfh.png'}
                             alt= {'Make sure Google Chrome has camera access'}/>
@@ -153,7 +153,7 @@ export default function VideoInterviewErrors() {
                     </Row>
                     <br></br>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <br></br>
                             <ReactMarkdown
                             children={markdownFinalFinalFinal}>
@@ -161,7 +161,7 @@ export default function VideoInterviewErrors() {
                         </Col>
                     </Row>
                 </Col>
-                <Col span={4}></Col>
+                <Col xs={0} sm={4}></Col>
             </Row>
         </div>
     );

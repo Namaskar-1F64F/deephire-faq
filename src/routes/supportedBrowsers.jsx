@@ -17,49 +17,49 @@ export default function SupportedBrowsers() {
     return (
         <div>
             <Row>
-                <Col span={4}>
+                <Col xs={0} sm={4}>
                 </Col>
-                <Col span={16}>
+                <Col xs={24} sm={16}>
                     <Title style={{justifyContent: 'center'}}>Supported Browsers</Title>
                 </Col>
-                <Col span={4}></Col>
+                <Col xs={0} sm={4}></Col>
             </Row>
             <br></br>
             <Row>
                 
-                    <Col span={4}>
+                    <Col xs={0} sm={4}>
                         <SiderDemo />
                     </Col>
-                    <Col span={16}>
+                    <Col xs={24} sm={16}>
                         <Row>
-                            <Col span={16}>
+                            <Col xs={24} sm={16}>
                                 <ReactMarkdown 
                                 children={markdown}>
                                 </ReactMarkdown>
                             </Col>
-                            <Col span={4}></Col>
+                            <Col xs={0} sm={4}></Col>
                         </Row>
                         <br></br>
                         <Row>
-                            <Col span={16}>
+                            <Col xs={24} sm={16}>
                                 <ImageFunction 
                                 src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1kg9bhn.png'}
                                 alt= {'Supported browsers for IOS and Android'}/>
                             </Col>
-                            <Col span={4}></Col>
+                            <Col xs={0} sm={4}></Col>
                         </Row>
                         <br></br>
                         <Row>
-                            <Col span={16}>
+                            <Col xs={24} sm={16}>
                                 <br></br>
                                 <ReactMarkdown
                                 children={markdownFinal}>
                                 </ReactMarkdown>
                             </Col>
-                            <Col span={4}></Col>
+                            <Col xs={0} sm={4}></Col>
                         </Row>
                     </Col>
-                <Col span={4}></Col>
+                <Col xs={0} sm={4}></Col>
             </Row>
         </div>
     );
