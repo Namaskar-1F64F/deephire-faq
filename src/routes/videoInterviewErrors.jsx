@@ -83,7 +83,7 @@ export default function VideoInterviewErrors() {
             <br></br>
             <Row>
                 <Col xs={0} sm={4}>
-                    <SiderDemo />
+                    {/* <SiderDemo /> */}
                 </Col>
                 <Col xs={24} sm={16}>
                     <Row>

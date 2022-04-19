@@ -146,6 +146,6 @@ export default function FrequentlyAskedQuestions() {
                 </Col>
                 <Col xs={0} sm={4}></Col>
             </Row>
-        </div>
+                    </div>
     );
 }
