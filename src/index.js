@@ -25,7 +25,7 @@ ReactDOM.render(
           title={<a href="/">Deephire Help Desk</a>}
           avatar={{ src: "/deephire-favicon.png" }}
         >
-          <SearchFunction style={{ width: "50vh" }} />
+          <SearchFunction />
           {/* {React.createElement(
             this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
             {
