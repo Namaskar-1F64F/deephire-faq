@@ -1,7 +1,7 @@
 import { Row, Col, Typography } from 'antd';
 import ReactMarkdown from 'react-markdown';
 import ImageFunction from './imageFunction';
-import { SiderDemo } from '../sider';
+// import { SiderDemo } from '../sider';
 
 const markdown = 
 `# Browser Support
@@ -15,7 +15,7 @@ const { Title } = Typography;
 
 export default function SupportedBrowsers() {
     return (
-        <div>
+        <>
             <Row>
                 <Col xs={0} sm={4}>
                 </Col>
@@ -24,43 +24,36 @@ export default function SupportedBrowsers() {
                 </Col>
                 <Col xs={0} sm={4}></Col>
             </Row>
-            <br></br>
             <Row>
                 
-                    <Col xs={0} sm={4}>
-                        {/* <SiderDemo /> */}
-                    </Col>
-                    <Col xs={24} sm={16}>
-                        <Row>
-                            <Col xs={24} sm={16}>
-                                <ReactMarkdown 
-                                children={markdown}>
-                                </ReactMarkdown>
-                            </Col>
-                            <Col xs={0} sm={4}></Col>
-                        </Row>
-                        <br></br>
-                        <Row>
-                            <Col xs={24} sm={16}>
-                                <ImageFunction 
-                                src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1kg9bhn.png'}
-                                alt= {'Supported browsers for IOS and Android'}/>
-                            </Col>
-                            <Col xs={0} sm={4}></Col>
-                        </Row>
-                        <br></br>
-                        <Row>
-                            <Col xs={24} sm={16}>
-                                <br></br>
-                                <ReactMarkdown
-                                children={markdownFinal}>
-                                </ReactMarkdown>
-                            </Col>
-                            <Col xs={0} sm={4}></Col>
-                        </Row>
-                    </Col>
-                <Col xs={0} sm={4}></Col>
+                <Col xs={0} sm={4}>
+                    {/* <SiderDemo /> */}
+                </Col>
+                <Col xs={24} sm={20}>
+                    <Row>
+                        <Col xs={24} sm={20}>
+                            <ReactMarkdown 
+                            children={markdown}>
+                            </ReactMarkdown>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={24} sm={20}>
+                            <ImageFunction 
+                            src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1kg9bhn.png'}
+                            alt= {'Supported browsers for IOS and Android'}/>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={24} sm={20}>
+                            <br></br>
+                            <ReactMarkdown
+                            children={markdownFinal}>
+                            </ReactMarkdown>
+                        </Col>
+                    </Row>
+                </Col>
             </Row>
-        </div>
+        </>
     );
 }

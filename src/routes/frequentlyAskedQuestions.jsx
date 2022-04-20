@@ -125,7 +125,7 @@ const { Title } = Typography;
 
 export default function FrequentlyAskedQuestions() {
     return (
-        <div>
+        <>
             <Row>
                 <Col xs={0} sm={4}>
                 </Col>
@@ -134,7 +134,6 @@ export default function FrequentlyAskedQuestions() {
                 </Col>
                 <Col xs={0} sm={4}></Col>
             </Row>
-            <br></br>
             <Row>
                 <Col xs={0} sm={4}>
                     {/* <SiderDemo /> */}
@@ -144,8 +143,7 @@ export default function FrequentlyAskedQuestions() {
                     children={markdown}>
                     </ReactMarkdown>
                 </Col>
-                <Col xs={0} sm={4}></Col>
             </Row>
-                    </div>
+        </>
     );
 }

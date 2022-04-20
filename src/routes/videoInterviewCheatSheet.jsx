@@ -1,6 +1,6 @@
 import { Row, Col, Typography } from 'antd';
 import ReactMarkdown from 'react-markdown';
-import { SiderDemo } from '../sider.jsx';
+// import { SiderDemo } from '../sider.jsx';
 import ImageFunction from './imageFunction.jsx';
 
 const markdown = 
@@ -10,7 +10,7 @@ const { Title } = Typography;
 
 export default function CheatSheet() {
     return (
-        <div>
+        <>
             <Row>
                 <Col xs={0} sm={4}>
                 </Col>
@@ -19,7 +19,6 @@ export default function CheatSheet() {
                 </Col>
                 <Col xs={0} sm={4}></Col>
             </Row>
-            <br></br>
             <Row>
                 <Col xs={0} sm={4}>
                     {/* <SiderDemo /> */}
@@ -33,7 +32,6 @@ export default function CheatSheet() {
                         </Col>
                         <Col xs={0} sm={4}></Col>
                     </Row>
-                    <br></br>
                     <Row>
                         <Col xs={24} sm={16}>
                             <ImageFunction 
@@ -43,8 +41,7 @@ export default function CheatSheet() {
                         <Col xs={0} sm={4}></Col>
                     </Row>
                 </Col>
-                <Col xs={0} sm={4}></Col>
             </Row>
-        </div>
+        </>
     );
 }

@@ -1,6 +1,6 @@
 import { Row, Col, Typography } from 'antd';
 import ReactMarkdown from 'react-markdown';
-import { SiderDemo } from '../sider';
+// import { SiderDemo } from '../sider';
 
 const markdown = 
 `# Here is a list of 70 example interview questions:
@@ -80,7 +80,7 @@ const { Title } = Typography;
 
 export default function SampleQuestions() {
     return (
-        <div>
+        <>
             <Row>
                 <Col xs={0} sm={4}>
                 </Col>
@@ -89,19 +89,16 @@ export default function SampleQuestions() {
                 </Col>
                 <Col xs={0} sm={4}></Col>
             </Row>
-            <br></br>
             <Row>
                 <Col xs={0} sm={4}>
                     {/* <SiderDemo /> */}
                 </Col>
-                <Col xs={24} sm={16}>
+                <Col xs={24} sm={20}>
                     <ReactMarkdown 
                     children={markdown}>
                     </ReactMarkdown>
                 </Col>
-                <Col xs={0} sm={4}></Col>
             </Row>
-            <br></br>
-        </div>
+        </>
     );
 }

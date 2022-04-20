@@ -1,7 +1,7 @@
 import { Row, Col, Typography } from 'antd';
 import ReactMarkdown from 'react-markdown';
 import ImageFunction from './imageFunction';
-import { SiderDemo } from '../sider';
+// import { SiderDemo } from '../sider';
 
 const markdown = 
 `# The following steps will help us debug and diagnose your issue!
@@ -28,7 +28,7 @@ const { Title } = Typography;
 
 export default function NetworkTestResults() {
     return (
-        <div>
+        <>
             <Row>
                 <Col xs={0} sm={4}>
                 </Col>
@@ -37,7 +37,6 @@ export default function NetworkTestResults() {
                 </Col>
                 <Col xs={0} sm={4}></Col>
             </Row>
-            <br></br>
             <Row>
                 <Col xs={0} sm={4}>
                     {/* <SiderDemo /> */}
@@ -50,7 +49,6 @@ export default function NetworkTestResults() {
                             </ReactMarkdown>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
                         <Col>
                             <ImageFunction
@@ -58,7 +56,6 @@ export default function NetworkTestResults() {
                             alt={'Send your results in the chatbox'} />
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
                         <Col>
                             <ReactMarkdown
@@ -67,8 +64,7 @@ export default function NetworkTestResults() {
                         </Col>
                     </Row>
                 </Col>
-                <Col xs={0} sm={4}></Col>
             </Row>
-        </div>
+        </>
     );
 }

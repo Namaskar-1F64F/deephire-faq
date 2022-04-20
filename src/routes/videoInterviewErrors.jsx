@@ -1,6 +1,6 @@
 import { Row, Col, Typography } from 'antd';
 import ReactMarkdown from 'react-markdown';
-import { SiderDemo } from '../sider';
+// import { SiderDemo } from '../sider';
 import ImageFunction from './imageFunction';
 
 const markdown = 
@@ -71,7 +71,7 @@ const { Title } = Typography;
 
 export default function VideoInterviewErrors() {
     return (
-        <div>
+        <>
             <Row>
                 <Col xs={0} sm={4}>
                 </Col>
@@ -80,12 +80,11 @@ export default function VideoInterviewErrors() {
                 </Col>
                 <Col xs={0} sm={4}></Col>
             </Row>
-            <br></br>
             <Row>
                 <Col xs={0} sm={4}>
                     {/* <SiderDemo /> */}
                 </Col>
-                <Col xs={24} sm={16}>
+                <Col xs={24} sm={20}>
                     <Row>
                         <Col>
                             <ReactMarkdown 
@@ -93,7 +92,6 @@ export default function VideoInterviewErrors() {
                             </ReactMarkdown>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
                         <Col>
                             <ImageFunction
@@ -101,7 +99,6 @@ export default function VideoInterviewErrors() {
                             alt= {'Enable Camera Permissions Chrome (Laptop or Desktop)'}/>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
                         <Col>
                             <ReactMarkdown
@@ -109,7 +106,6 @@ export default function VideoInterviewErrors() {
                             </ReactMarkdown>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
                         <Col>
                             <ImageFunction 
@@ -117,16 +113,13 @@ export default function VideoInterviewErrors() {
                             alt= {'Enable Camera Permissions (Android)'}/>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
                         <Col>
-                            <br></br>
                             <ReactMarkdown
                             children={markdownFinal}>
                             </ReactMarkdown>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
                         <Col>
                             <ImageFunction 
@@ -134,16 +127,13 @@ export default function VideoInterviewErrors() {
                             alt= {'Make sure Chrome is ON'}/>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
                         <Col>
-                            <br></br>
                             <ReactMarkdown
                             children={markdownFinalFinal}>
                             </ReactMarkdown>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
                         <Col>
                             <ImageFunction 
@@ -151,18 +141,15 @@ export default function VideoInterviewErrors() {
                             alt= {'Make sure Google Chrome has camera access'}/>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
                         <Col>
-                            <br></br>
                             <ReactMarkdown
                             children={markdownFinalFinalFinal}>
                             </ReactMarkdown>
                         </Col>
                     </Row>
                 </Col>
-                <Col xs={0} sm={4}></Col>
             </Row>
-        </div>
+        </>
     );
 }
