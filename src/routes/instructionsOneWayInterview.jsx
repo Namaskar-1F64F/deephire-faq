@@ -108,6 +108,7 @@ export default function PracticeInterview() {
                             alt= {'A successful test means you are ready to start your practice interview'}/>
                         </Col>
                     </Row>
+                    <br></br>
                     <Row>
                         <Col xs={24} sm={20}>
                             <ImageFunction 
