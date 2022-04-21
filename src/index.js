@@ -19,13 +19,12 @@ const { Footer, Content } = Layout;
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Layout style={{ minHeight: "100vh" }}>
+      <Layout style={{ minHeight: "100vh", padding: 24 }}>
         <PageHeader
-          className="site-page-header"
           title={<a href="/">Deephire Help Desk</a>}
           avatar={{ src: "/deephire-favicon.png" }}
+          extra={<SearchFunction />}
         >
-          <SearchFunction />
           {/* {React.createElement(
             this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
             {
@@ -56,19 +55,16 @@ ReactDOM.render(
             <Route path="*" element={<>fallback page</>} />
           </Routes>
         </Content>
-        <br></br>
-        <Footer style={{ bottom: 0, right: 0 }}>
-          <div style={{ width: "100vh" }}>
+        <Footer>
+          <a target="_blank" rel="noreferrer" href="https://www.deephire.com">
             <img
               alt="Deephire Logo"
               src="/deephire-favicon.png"
               height="30px"
             />
-            <a target="_blank" rel="noreferrer" href="https://www.deephire.com">
-              <Divider type="vertical" />
-              Deephire.com
-            </a>
-          </div>
+            <Divider type="vertical" />
+            Deephire.com
+          </a>
         </Footer>
       </Layout>
     </BrowserRouter>

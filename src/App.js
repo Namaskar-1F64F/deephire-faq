@@ -5,22 +5,14 @@ import { data } from "./data";
 import Layout from "antd/lib/layout/layout";
 
 const { Title } = Typography;
-const style = {
-  background: "white",
-  padding: "8px 0",
-};
 
 function SpaceVertical({ data }) {
   const { title, link, summary } = data;
   return (
-    <Space
-      direction="vertical"
-      size="middle"
-      style={{ display: "flex", width: "100vh" }}
-    >
+    <Space direction="vertical" size="middle" style={{ width: "100vh" }}>
       <a alt="Card" href={link}>
-        <Card type="inner" title={title} size="default" hoverable={true}>
-          <p>{summary}</p>
+        <Card type="inner" title={title} hoverable={true}>
+          {summary}
         </Card>
       </a>
     </Space>
@@ -36,9 +28,12 @@ const App = () => (
           <Divider orientation="center">
             <Title>Help Desk</Title>
           </Divider>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={0} sm={4}></Col>
+        <Col xs={24} sm={20}>
           <List
-            bordered
-            style={style}
             dataSource={data}
             renderItem={(item) => (
               <List.Item>
@@ -47,7 +42,6 @@ const App = () => (
             )}
           />
         </Col>
-        <Col xs={0} sm={4}></Col>
       </Row>
     </Layout>
   </>
