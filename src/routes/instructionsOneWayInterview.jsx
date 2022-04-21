@@ -1,7 +1,7 @@
 import { Row, Col, Typography } from 'antd';
 import ReactMarkdown from 'react-markdown';
 import ImageFunction from './imageFunction';
-import { SiderDemo } from '../sider';
+// import { SiderDemo } from '../sider';
 
 const markdown = 
 `# Congratulations on being selected for a One Way Interview!
@@ -80,75 +80,64 @@ const { Title } = Typography;
 
 export default function PracticeInterview() {
     return (
-        <div>
+        <>
             <Row>
-                <Col span={4}>
+                <Col xs={0} sm={4}>
                 </Col>
-                <Col span={16}>
+                <Col xs={24} sm={16}>
                     <Title style={{justifyContent: 'center'}}>One Way Interview Instructions</Title>
                 </Col>
-                <Col span={4}></Col>
+                <Col xs={0} sm={4}></Col>
             </Row>
-            <br></br>
             <Row>
-                <Col span={4}>
-                    <SiderDemo />
+                <Col xs={0} sm={4}>
+                    {/* <SiderDemo /> */}
                 </Col>
-                <Col span={16}>
+                <Col xs={24} sm={20}>
                     <Row>
-                        <Col span={16}>
+                        <Col xs={24} sm={20}>
                             <ReactMarkdown 
                             children={markdown}>
                             </ReactMarkdown>
                         </Col>
-                        <Col span={4}></Col>
                     </Row>
-                    <br></br>
                     <Row>
-                        <Col span={16}>
+                        <Col xs={24} sm={20}>
                             <ImageFunction 
                             src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1ip9ymh.png'}
                             alt= {'A successful test means you are ready to start your practice interview'}/>
                         </Col>
-                        <Col span={4}></Col>
                     </Row>
-                    <br></br>
                     <Row>
-                        <Col span={16}>
+                        <Col xs={24} sm={20}>
                             <ImageFunction 
                             src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1hselvw.png'}
                             alt= {'Your hardware will be tested automatically!'}/>
                         </Col>
-                        <Col span={4}></Col>
                     </Row>
                     <Row>
-                        <Col span={16}>
-                            <br></br>
+                        <Col xs={24} sm={20}>
                             <ReactMarkdown
                             children={markdownFinal}>
                             </ReactMarkdown>
                         </Col>
-                        <Col span={4}></Col>
                     </Row>
                     <Row>
-                        <Col span={16}>
+                        <Col xs={24} sm={20}>
                             <ImageFunction 
                             src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1xo8ly.png'}
                             alt= {'Once you click the button, this chat box opens up!'}/>
                         </Col>
-                        <Col span={4}></Col>
                     </Row>
                     <Row>
-                        <Col span={16}>
-                            <br></br>
+                        <Col xs={24} sm={20}>
                             <ReactMarkdown
                             children={markdownFinalFinal}>
                             </ReactMarkdown>
                         </Col>
                     </Row>
                 </Col>
-                <Col span={4}></Col>
             </Row>
-        </div>
+        </>
     );
 }

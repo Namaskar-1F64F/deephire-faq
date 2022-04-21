@@ -10,22 +10,27 @@ export class SiderDemo extends React.Component {
     collapsed: false,
   };
 
-  onCollapse = collapsed => {
-    console.log(collapsed);
-    this.setState({ collapsed });
+  toggle = () => {
+    this.setState({
+      collapsed: !this.state.collapsed,
+    });
   };
 
+  // onCollapse = collapsed => {
+  //   console.log(collapsed);
+  //   this.setState({ collapsed });
+  // };
+
   render() {
-    const { collapsed } = this.state;
     return (
         <Layout>
           <Sider 
+          trigger={null}
           style={{
           overflow: 'auto',
           position: 'fixed',
           left: 0,}}
-          collapsible collapsed={collapsed} 
-          onCollapse={this.onCollapse}
+          collapsible collapsed={this.state.collapsed}
           >
             <div className="logo" />
             <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">

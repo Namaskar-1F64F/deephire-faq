@@ -1,6 +1,6 @@
 import { Row, Col, Typography } from 'antd';
 import ReactMarkdown from 'react-markdown';
-import { SiderDemo } from '../sider';
+// import { SiderDemo } from '../sider';
 
 const markdown = 
 `## What are common mistakes candidates make?
@@ -125,28 +125,25 @@ const { Title } = Typography;
 
 export default function FrequentlyAskedQuestions() {
     return (
-        <div>
+        <>
             <Row>
-                <Col span={4}>
+                <Col xs={0} sm={4}>
                 </Col>
-                <Col span={16}>
+                <Col xs={24} sm={16}>
                     <Title style={{justifyContent: 'center'}}>Frequently Asked Questions</Title>
                 </Col>
-                <Col span={4}></Col>
+                <Col xs={0} sm={4}></Col>
             </Row>
-            <br></br>
             <Row>
-                <Col span={4}>
-                    <SiderDemo />
+                <Col xs={0} sm={4}>
+                    {/* <SiderDemo /> */}
                 </Col>
-                <Col span={16}>
+                <Col xs={24} sm={16}>
                     <ReactMarkdown 
                     children={markdown}>
                     </ReactMarkdown>
                 </Col>
-                <Col span={4}></Col>
             </Row>
-            <br></br>
-        </div>
+        </>
     );
 }

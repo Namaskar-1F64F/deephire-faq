@@ -1,6 +1,6 @@
 import { Row, Col, Typography } from 'antd';
 import ReactMarkdown from 'react-markdown';
-import { SiderDemo } from '../sider';
+// import { SiderDemo } from '../sider';
 import ImageFunction from './imageFunction';
 
 const markdown = 
@@ -71,98 +71,85 @@ const { Title } = Typography;
 
 export default function VideoInterviewErrors() {
     return (
-        <div>
+        <>
             <Row>
-                <Col span={4}>
+                <Col xs={0} sm={4}>
                 </Col>
-                <Col span={16}>
+                <Col xs={24} sm={16}>
                     <Title style={{justifyContent: 'center'}}>Video Interview Errors</Title>
                 </Col>
-                <Col span={4}></Col>
+                <Col xs={0} sm={4}></Col>
             </Row>
-            <br></br>
             <Row>
-                <Col span={4}>
-                    <SiderDemo />
+                <Col xs={0} sm={4}>
+                    {/* <SiderDemo /> */}
                 </Col>
-                <Col span={16}>
+                <Col xs={24} sm={20}>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <ReactMarkdown 
                             children={markdown}>
                             </ReactMarkdown>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <ImageFunction
                             src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_1yvwohq.png'}
                             alt= {'Enable Camera Permissions Chrome (Laptop or Desktop)'}/>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <ReactMarkdown
                             children={markdownAndroidImage}>
                             </ReactMarkdown>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <ImageFunction 
                             src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_9yuwqb.png'}
                             alt= {'Enable Camera Permissions (Android)'}/>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
-                        <Col span={16}>
-                            <br></br>
+                        <Col>
                             <ReactMarkdown
                             children={markdownFinal}>
                             </ReactMarkdown>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <ImageFunction 
                             src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_t1xko5.png'}
                             alt= {'Make sure Chrome is ON'}/>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
-                        <Col span={16}>
-                            <br></br>
+                        <Col>
                             <ReactMarkdown
                             children={markdownFinalFinal}>
                             </ReactMarkdown>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
-                        <Col span={16}>
+                        <Col>
                             <ImageFunction 
                             src= {'https://storage.crisp.chat/users/helpdesk/website/96ec5e572d82d800/image_w2wzfh.png'}
                             alt= {'Make sure Google Chrome has camera access'}/>
                         </Col>
                     </Row>
-                    <br></br>
                     <Row>
-                        <Col span={16}>
-                            <br></br>
+                        <Col>
                             <ReactMarkdown
                             children={markdownFinalFinalFinal}>
                             </ReactMarkdown>
                         </Col>
                     </Row>
                 </Col>
-                <Col span={4}></Col>
             </Row>
-        </div>
+        </>
     );
 }
