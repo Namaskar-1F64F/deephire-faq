@@ -24,15 +24,7 @@ ReactDOM.render(
           title={<a href="/">Deephire Help Desk</a>}
           avatar={{ src: "/deephire-favicon.png" }}
           extra={<SearchFunction />}
-        >
-          {/* {React.createElement(
-            this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
-            {
-              className: "trigger",
-              onClick: this.toggle,
-            }
-          )} */}
-        </PageHeader>
+        ></PageHeader>
         <Content>
           <Routes>
             <Route path="/" element={<App />} />

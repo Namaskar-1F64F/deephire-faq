@@ -9,7 +9,7 @@ const { Title } = Typography;
 function SpaceVertical({ data }) {
   const { title, link, summary } = data;
   return (
-    <Space direction="vertical" size="middle" style={{ width: "100vh" }}>
+    <Space direction="vertical" size="middle" style={{ width: "100%" }}>
       <a alt="Card" href={link}>
         <Card type="inner" title={title} hoverable={true}>
           {summary}
@@ -29,10 +29,11 @@ const App = () => (
             <Title>Help Desk</Title>
           </Divider>
         </Col>
+        <Col xs={0} sm={4}></Col>
       </Row>
       <Row>
         <Col xs={0} sm={4}></Col>
-        <Col xs={24} sm={20}>
+        <Col xs={24} sm={16}>
           <List
             dataSource={data}
             renderItem={(item) => (
@@ -42,6 +43,7 @@ const App = () => (
             )}
           />
         </Col>
+        <Col xs={0} sm={4}></Col>
       </Row>
     </Layout>
   </>
