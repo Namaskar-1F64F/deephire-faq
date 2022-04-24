@@ -12,7 +12,7 @@ import Debugging from "./routes/videoInterviewErrors";
 import SupportedBrowsers from "./routes/supportedBrowsers";
 import PracticeInterview from "./routes/instructionsOneWayInterview";
 import SampleQuestions from "./routes/sampleQuestions";
-import newSearchFunction from "./newSearchFunction";
+import SearchFunction from "./searchFunction";
 
 const { Footer, Content } = Layout;
 
@@ -23,9 +23,8 @@ ReactDOM.render(
         <PageHeader
           title={<a href="/">Deephire Help Desk</a>}
           avatar={{ src: "/deephire-favicon.png" }}
-        >
-          <newSearchFunction />
-        </PageHeader>
+          extra={<SearchFunction />}
+        ></PageHeader>
         <Content>
           <Routes>
             <Route path="/" element={<App />} />
