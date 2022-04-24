@@ -12,7 +12,7 @@ import Debugging from "./routes/videoInterviewErrors";
 import SupportedBrowsers from "./routes/supportedBrowsers";
 import PracticeInterview from "./routes/instructionsOneWayInterview";
 import SampleQuestions from "./routes/sampleQuestions";
-import SearchFunction from "./searchFunction";
+import newSearchFunction from "./newSearchFunction";
 
 const { Footer, Content } = Layout;
 
@@ -23,15 +23,8 @@ ReactDOM.render(
         <PageHeader
           title={<a href="/">Deephire Help Desk</a>}
           avatar={{ src: "/deephire-favicon.png" }}
-          extra={<SearchFunction />}
         >
-          {/* {React.createElement(
-            this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
-            {
-              className: "trigger",
-              onClick: this.toggle,
-            }
-          )} */}
+          <newSearchFunction />
         </PageHeader>
         <Content>
           <Routes>
