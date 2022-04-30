@@ -31,8 +31,6 @@ Because you can take the interview on your own time, it gives you the opportunit
 
 When you are ready to take the video interview, click the interview link your recruiter sent to you. 
 
-We are here to support you every step of the way.
-
 ## When I click the link, what can I expect? 
 
 When you click your interview link, you will be able to watch an Introduction Video provided by your recruiter. 

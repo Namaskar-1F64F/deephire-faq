@@ -26,13 +26,10 @@ You will see how many **Retakes** you have available to use while completing you
 
 The number of **Retakes** for a specific question refers to the number of times you can attempt to answer that question. When you run out of **Retakes**, you will no longer be able to re-record and your most recent answer will be submitted.
 
-However, you cannot retake an entire interview, so make sure to review your answer and decide whether you’d like a retake before hitting ‘Submit’ in the bottom-right. If you need to retake the entire interview due to a technical issue, message our support.
+However, you cannot retake an entire interview, so make sure to review your answer and decide whether you’d like a retake before hitting ‘Submit’ in the bottom-right.
 
 To retake an individual question simply click the ‘Retake’ button in the bottom left of your last recorded question.
 
-**IMPORTANT:** If you run out of retakes due to any technical difficulties the chat-box in the very bottom right corner of the webpage can be accessed for live support 24/7, and we will report the issues to your recruiter to encourage a new interview to be conducted.
-
-If you run into any problems, reach out through the chat button on the bottom right of your screen. We would be happy to help!
 
 ## Is there a time limit for interview questions? 
 
@@ -107,7 +104,6 @@ DeepHire is a very flexible platform in regards to interview completion!
 
 A DeepHire Interview can be completed on any wifi-connected device with a camera and microphone. 
 Everything on the platform operates off a one-click link, no external app downloads, no setup time. Just click your link and hit ‘Record Answer’ on any phone, tablet, or computer!
-If you encounter any technical issues, use the chatbox in the bottom right corner of the webpage to contact our live tech support team. We can help with any camera, connection, or software issue. 
 
 ## How do I answer Interview Questions like a Professional? 
 
