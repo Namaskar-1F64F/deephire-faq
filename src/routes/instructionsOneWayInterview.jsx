@@ -21,7 +21,7 @@ You are being asked to do a One Way Interview because you stand out amongst all 
 The company looking to hire you (and your recruiter) watch your videos from a private, secure account. Only those involved in your hiring process will watch your videos.
 
 ## Are there any tips for the interview?
-Yes! Click around our [helpdesk](add link here) for lots of tips and tricks to optimize your video interview.
+Yes! View our [FAQ](/frequentlyAskedQuestions) for lots of tips and tricks to optimize your video interview.
 
 ## What's in it for me?
 
