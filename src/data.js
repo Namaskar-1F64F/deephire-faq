@@ -223,7 +223,7 @@ If you ever need help, just hit the chat button on the bottom right of your scre
     Manage your response time accordingly.
     To help manage your time effectively refer to the question-clock in the upper right corner while recording an interview:
     
-    **Time Management Quick Tip:** Use the STAR Method [Link to STAR Method FAQ Article] to guide your responses. Here are some general guidelines for how long to spend on each component of a professional response:
+    **Time Management Quick Tip:** Use the [STAR Method](https://www.indeed.com/career-advice/interviewing/how-to-use-the-star-interview-response-technique) to guide your responses. Here are some general guidelines for how long to spend on each component of a professional response:
     
     * **Situation:** Spend 10% of your time explaining the background information
     * **Task:** Spend 20% of your time describing your task or goal in this example; what responsibilities were you specifically asked to fulfill?

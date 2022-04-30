@@ -2,8 +2,8 @@ import { Row, Col, Typography } from 'antd';
 import ReactMarkdown from 'react-markdown';
 // import { SiderDemo } from '../sider';
 
-const markdown = 
-`## What are common mistakes candidates make?
+const markdown =
+    `## What are common mistakes candidates make?
 
 1. Candidates don't realize they can retake the interview.
 2. Candidates don't realize there is a time limit for the questions.
@@ -40,7 +40,7 @@ Recruiters and hiring managers will usually set a time limit for each interview 
 Manage your response time accordingly.
 To help manage your time effectively refer to the question-clock in the upper right corner while recording an interview:
 
-**Time Management Quick Tip:** Use the STAR Method [Link to STAR Method FAQ Article] to guide your responses. Here are some general guidelines for how long to spend on each component of a professional response:
+**Time Management Quick Tip:** Use the [STAR Method](https://www.indeed.com/career-advice/interviewing/how-to-use-the-star-interview-response-technique) to guide your responses. Here are some general guidelines for how long to spend on each component of a professional response:
 
 * **Situation:** Spend 10% of your time explaining the background information
 * **Task:** Spend 20% of your time describing your task or goal in this example; what responsibilities were you specifically asked to fulfill?
@@ -75,8 +75,6 @@ You will be able to review (and retake if allowed by the recruiter/hiring manage
 
 ## How do I make a Good Video?
 
-To learn how to best answer interview questions, not just how to record please see here [LINK TO HOW TO ANSWER LIKE A PRO ARTICLE]
-
 **Best Practices:** 
 * Present yourself professionally
 * Dress to Impress
@@ -93,7 +91,6 @@ To learn how to best answer interview questions, not just how to record please s
     * We recommend sitting across from a well lit window or a relatively bright lamp. 
     * Don’t let the light source face the camera or your face will be very difficult to see!
 * Use Retakes to Your Advantage
-    * See this article on [RETAKE ARTICLE LINK].
     * Prepare to do your best on each attempt, but there’s no pressure on a one-way video interview! If you’re unsatisfied with your performance simply hit ‘Retake’ in the bottom right when reviewing your response.
     * Review your videos after each question to ensure video quality, audio quality, etc. are looking good and staying consistent throughout the interview.
 * Eliminate any potential distractions
@@ -130,7 +127,7 @@ export default function FrequentlyAskedQuestions() {
                 <Col xs={0} sm={4}>
                 </Col>
                 <Col xs={24} sm={16}>
-                    <Title style={{justifyContent: 'center'}}>Frequently Asked Questions</Title>
+                    <Title style={{ justifyContent: 'center' }}>Frequently Asked Questions</Title>
                 </Col>
                 <Col xs={0} sm={4}></Col>
             </Row>
@@ -139,8 +136,8 @@ export default function FrequentlyAskedQuestions() {
                     {/* <SiderDemo /> */}
                 </Col>
                 <Col xs={24} sm={16}>
-                    <ReactMarkdown 
-                    children={markdown}>
+                    <ReactMarkdown
+                        children={markdown}>
                     </ReactMarkdown>
                 </Col>
             </Row>
