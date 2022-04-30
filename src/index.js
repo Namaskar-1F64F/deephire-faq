@@ -11,7 +11,6 @@ import FrequentlyAskedQuestions from "./routes/frequentlyAskedQuestions";
 import Debugging from "./routes/videoInterviewErrors";
 import SupportedBrowsers from "./routes/supportedBrowsers";
 import PracticeInterview from "./routes/instructionsOneWayInterview";
-import SampleQuestions from "./routes/sampleQuestions";
 import SearchFunction from "./searchFunction";
 
 const { Footer, Content } = Layout;
@@ -43,8 +42,7 @@ ReactDOM.render(
               path="/instructionsOneWayInterview"
               element={<PracticeInterview />}
             />
-            <Route path="/sampleQuestions" element={<SampleQuestions />} />
-            <Route path="*" element={<>fallback page</>} />
+            <Route path="*" element={<>page does not exist</>} />
           </Routes>
         </Content>
         <Footer>
