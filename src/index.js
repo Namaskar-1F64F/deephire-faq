@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { Layout, PageHeader, Divider } from "antd";
 // import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
 import App from "./App";
@@ -17,7 +17,7 @@ const { Footer, Content } = Layout;
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Layout style={{ minHeight: "100vh", padding: 24 }}>
         <PageHeader
           title={<a href="/">Deephire Help Desk</a>}
@@ -27,6 +27,7 @@ ReactDOM.render(
         <Content>
           <Routes>
             <Route path="/" element={<App />} />
+            <Route path="/index.html" element={<App />} />
             <Route
               path="/frequentlyAskedQuestions"
               element={<FrequentlyAskedQuestions />}
@@ -57,7 +58,7 @@ ReactDOM.render(
           </a>
         </Footer>
       </Layout>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

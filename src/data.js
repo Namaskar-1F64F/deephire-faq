@@ -2,7 +2,7 @@ export const data = [
   {
     id: 14,
     title: "One Way Interview Instructions",
-    link: "/instructionsOneWayInterview",
+    link: "#/instructionsOneWayInterview",
     summary:
       "Step-by-step instructions for what to expect when you begin the interview process.",
     markdown: `# Congratulations on being selected for a One Way Interview!
@@ -77,14 +77,14 @@ If you ever need help, just hit the chat button on the bottom right of your scre
   {
     id: 0,
     title: "Video Interview Cheat Sheet",
-    link: "/videoInterviewCheatSheet",
+    link: "#/videoInterviewCheatSheet",
     summary: "Last minute interview tips.",
     markdown: `## Last minute interview tips.`,
   },
   {
     id: 13,
     title: "Supported Browsers",
-    link: "/supportedBrowsers",
+    link: "#/supportedBrowsers",
     summary:
       "What browsers does Deephire support? Read this page to decide which browser to use to record your one-way interview.",
     markdown: `# Browser Support
@@ -95,7 +95,7 @@ If you ever need help, just hit the chat button on the bottom right of your scre
   {
     id: 12,
     title: "Resolving Interview Errors",
-    link: "/videoInterviewErrors",
+    link: "#/videoInterviewErrors",
     summary:
       "What to do if you encounter errors while recording your interview.",
     markdown: `## Debugging steps if you have an issue with your interview:
@@ -162,7 +162,7 @@ If you ever need help, just hit the chat button on the bottom right of your scre
   {
     id: 2,
     title: "How to get Network Test Results",
-    link: "/networkTestResults",
+    link: "#/networkTestResults",
     summary: "These steps will help us debug and diagnose your issue!",
     markdown: `# The following steps will help us debug and diagnose your issue!
 
@@ -183,7 +183,7 @@ If you ever need help, just hit the chat button on the bottom right of your scre
   {
     id: 1,
     title: "Frequently Asked Questions",
-    link: "/frequentlyAskedQuestions",
+    link: "#/frequentlyAskedQuestions",
     summary:
       "Can't find what you're looking for? Check out these frequently asked questions.",
     markdown: `## What are common mistakes candidates make?
